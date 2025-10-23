@@ -55,14 +55,16 @@ def init(thermo_file=None, propellant_file=None):
 
     r = lib.load_thermo(THERMO_FILE.encode('utf-8'))
     if r > 0:
-        print("Loaded {} thermo species".format(r))
+        #print("Loaded {} thermo species".format(r))
+        None
     else:
         print("Failed to load thermo file {}".format(THERMO_FILE))
 
     r = lib.load_propellant(PROPELLANT_FILE.encode('utf-8'))
 
     if r > 0:
-        print("Loaded {} propellants".format(r))
+        #print("Loaded {} propellants".format(r))
+        None
     else:
         print("Failed to load propellant file {}".format(PROPELLANT_FILE))
 
